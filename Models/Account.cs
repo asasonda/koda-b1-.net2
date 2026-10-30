@@ -1,4 +1,4 @@
-namespace Banking.Console.Models.Account;
+namespace Banking.Console.Models;
 
 public class Account
 {
@@ -28,8 +28,28 @@ public class Account
         Balance = balance;
     }
 
-    public string GetInformationAccounts()
+    public virtual decimal GetTfBalance()
     {
-        return $"Account Number: {AccountNumber}\nName: {OwnerName}\nBalance: {Balance}";
+        return Balance;
+    }
+
+    public virtual string GetInformationAccounts()
+    {
+        return $"Account Number: {AccountNumber}\nName: {OwnerName}\nBalance: {Balance}\n";
+    }
+
+    public virtual void TransferReceiver(decimal jumlahTf)
+    {
+        if(jumlahTf < 0)
+        {
+            throw new ArgumentException("Jumlah harus positif");
+        }
+
+        Balance = checked(jumlahTf + Balance);
+    }
+
+    public void SendTf(decimal sendTf)
+    {
+        Balance -= sendTf;
     }
 }

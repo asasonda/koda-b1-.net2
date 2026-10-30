@@ -12,3 +12,4 @@ D:\koda\C#\DOTNET\src\Banking.Console\obj\Debug\net10.0\refint\Banking.Console.d
 D:\koda\C#\DOTNET\src\Banking.Console\obj\Debug\net10.0\Banking.Console.pdb
 D:\koda\C#\DOTNET\src\Banking.Console\obj\Debug\net10.0\Banking.Console.genruntimeconfig.cache
 D:\koda\C#\DOTNET\src\Banking.Console\obj\Debug\net10.0\ref\Banking.Console.dll
+D:\koda\C#\DOTNET\src\Banking.Console\obj\Debug\net10.0\Banking.Console.sourcelink.json
